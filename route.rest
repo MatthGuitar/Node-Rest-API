@@ -1,0 +1,29 @@
+
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5efcf706d4d5152f7c349040
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type:  application/json
+
+{
+    "name": "Matheus",
+    "subscribedToChannel": "TV Quase"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5efcf706d4d5152f7c349040
+
+###
+
+PATCH http://localhost:3000/subscribers/5efcf417a767dc08f4cb75eb
+Content-Type: application/json
+
+{
+    "name": "new Name"
+}
